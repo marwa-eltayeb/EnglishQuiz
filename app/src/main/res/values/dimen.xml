@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Padding of layout. -->
+    <dimen name="paddingForLayout">16dp</dimen>
+
+    <!-- Size of the text. -->
+    <dimen name="textSize">18sp</dimen>
+
+    <!-- TextView (Questions). -->
+    <dimen name="marginForTextView">16dp</dimen>
+    <dimen name="paddingForTextView">10dp</dimen>
+    <dimen name="widthOfStrokeForTextView">2dp</dimen>
+    <dimen name="radiusOfTextView">2dp</dimen>
+
+    <!-- Height of the image. -->
+    <dimen name="heightOfImage">220dp</dimen>
+
+    <!-- Margin Top of layout. -->
+    <dimen name="marginTop">10dp</dimen>
+
+    <!-- Submit Button. -->
+    <dimen name="marginTopForButton">16dp</dimen>
+    <dimen name="paddingForButton">5dp</dimen>
+    <dimen name="widthOfStroke">1dp</dimen>
+    <dimen name="radiusOfButton">10dp</dimen>
+
+    <!-- size of the text (name and result in activity_result). -->
+    <dimen name="textSizeForNameAndResult">30sp</dimen>
+
+    <!-- Image in activity_result -->
+    <dimen name="widthOfImage">300dp</dimen>
+
+</resources>

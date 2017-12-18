@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">English Quiz</string>
+    <string name="quiz_summary_name">Name:</string>
+    <string name="question3Answer">caught</string>
+
+    <string name="percentage">%</string>
+
+    <!-- Hint -->
+    <string name="name">Name</string>
+
+    <!-- Question one -->
+    <string name="question_one">Can you hear what he is ......?</string>
+    <!-- Answers of Question one -->
+    <string name="q1_answer_a">saying</string>
+    <string name="q1_answer_b">speaking</string>
+    <string name="q1_answer_c">telling</string>
+
+    <!-- Question two -->
+    <string name="question_two">She has not come home .....</string>
+    <!-- Answers of Question two -->
+    <string name="q2_answer_a">still</string>
+    <string name="q2_answer_b">already</string>
+    <string name="q2_answer_c">yet</string>
+
+    <!-- Question three -->
+    <string name="question_three">What is the past tense of "catch"?</string>
+    <!-- Hint for Question three -->
+    <string name="typeYourAnswer">Type your answer here</string>
+
+    <!-- Question four -->
+    <string name="question_four">What do you like?</string>
+    <!-- Answers of Question four -->
+    <string name="q4_answer_a">I like basketball.</string>
+    <string name="q4_answer_b">I hate music.</string>
+    <string name="q4_answer_c">I like reading.</string>
+    <string name="q4_answer_d">She likes watching TV.</string>
+
+    <!-- Question five -->
+    <string name="question_five">He is ........ football.</string>
+    <!-- Answers of Question five -->
+    <string name="q5_answer_a">playing</string>
+    <string name="q5_answer_b">played</string>
+    <string name="q5_answer_c">plays</string>
+
+    <!-- submit answers -->
+    <string name="submit">Submit</string>
+
+    <!-- Description of the pictures -->
+    <string name="description">A boy is playing football.</string>
+    <!-- ImageView in the ResultActivity -->
+    <string name="feelingsTowardsResult">An image for describing the feelings towards the result.</string>
+
+</resources>
