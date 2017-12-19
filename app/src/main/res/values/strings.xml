@@ -1,12 +1,10 @@
 <resources>
-    <string name="app_name">English Quiz</string>
-    <string name="quiz_summary_name">Name:</string>
-    <string name="question3Answer">caught</string>
 
-    <string name="percentage">%</string>
+    <!-- Name of the app -->
+    <string name="app_name">English Quiz</string>
 
     <!-- Hint -->
-    <string name="name">Name</string>
+    <string name="name">Type your name</string>
 
     <!-- Question one -->
     <string name="question_one">Can you hear what he is ......?</string>
@@ -26,6 +24,8 @@
     <string name="question_three">What is the past tense of "catch"?</string>
     <!-- Hint for Question three -->
     <string name="typeYourAnswer">Type your answer here</string>
+    <!-- Answer of Question three -->
+    <string name="question3Answer">caught</string>
 
     <!-- Question four -->
     <string name="question_four">What do you like?</string>
@@ -44,6 +44,8 @@
 
     <!-- submit answers -->
     <string name="submit">Submit</string>
+    <!-- percentage of the result -->
+    <string name="percentage">%</string>
 
     <!-- Description of the pictures -->
     <string name="description">A boy is playing football.</string>
