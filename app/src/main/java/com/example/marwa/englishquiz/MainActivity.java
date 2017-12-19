@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected static final String NAME = "name";
     protected static final String RESULT = "result";
 
-    /** Tracks the percentage for each question. */
+    /**
+     * Tracks the percentage for each question.
+     */
     int percentage = 0;
 
     EditText nameField;
@@ -29,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
     CheckBox question4_D;
     RadioGroup question5;
 
+    String name;
+    
+    /**
+     * This method is used for counting good answers.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,16 +52,13 @@ public class MainActivity extends AppCompatActivity {
         question5 = (RadioGroup) findViewById(R.id.radio_group3);
     }
 
+    private int countGoodAnswers() {
 
-    /** This method is used for counting good answers. */
-    String name;
-    private int countGoodAnswers(){
         // Find the user's name
         name = nameField.getText().toString();
         nameField.setText("");
 
-
-        //Count good answers percentage
+        // Question number 1
         if (question1.getCheckedRadioButtonId() == R.id.question1_right_answer) {
             percentage = 20;
         }
@@ -89,9 +93,9 @@ public class MainActivity extends AppCompatActivity {
      * Open Results activity and pass good answers' percentage
      */
     public void submitAnswers(View view) {
-        Intent intent = new Intent(MainActivity.this,ResultActivity.class);
+        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
         intent = intent.putExtra(RESULT, countGoodAnswers());
-        intent = intent.putExtra(NAME ,name);
+        intent = intent.putExtra(NAME, name);
         percentage = 0;
         startActivity(intent);
     }
