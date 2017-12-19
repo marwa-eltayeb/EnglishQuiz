@@ -19,10 +19,30 @@ public class MainActivity extends AppCompatActivity {
     /** Tracks the percentage for each question. */
     int percentage = 0;
 
+    EditText nameField;
+    RadioGroup question1;
+    RadioGroup question2;
+    EditText question3;
+    CheckBox question4_A;
+    CheckBox question4_B;
+    CheckBox question4_C;
+    CheckBox question4_D;
+    RadioGroup question5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nameField = (EditText) findViewById(R.id.name_field);
+        question1 = (RadioGroup) findViewById(R.id.radio_group1);
+        question2 = (RadioGroup) findViewById(R.id.radio_group2);
+        question3 = (EditText) findViewById(R.id.question3_TextField);
+        question4_A = (CheckBox) findViewById(R.id.checkbox1);
+        question4_B = (CheckBox) findViewById(R.id.checkbox2);
+        question4_C = (CheckBox) findViewById(R.id.checkbox3);
+        question4_D = (CheckBox) findViewById(R.id.checkbox4);
+        question5 = (RadioGroup) findViewById(R.id.radio_group3);
     }
 
 
@@ -30,42 +50,32 @@ public class MainActivity extends AppCompatActivity {
     String name;
     private int countGoodAnswers(){
         // Find the user's name
-        EditText nameField = (EditText) findViewById(R.id.name_field);
         name = nameField.getText().toString();
         nameField.setText("");
 
 
         //Count good answers percentage
-        RadioGroup question1 = (RadioGroup) findViewById(R.id.radio_group1);
         if (question1.getCheckedRadioButtonId() == R.id.question1_right_answer) {
             percentage = 20;
         }
         // Question number 2
-        RadioGroup question2 = (RadioGroup) findViewById(R.id.radio_group2);
         if (question2.getCheckedRadioButtonId() == R.id.question2_right_answer) {
             percentage += 20;
         }
         // Question number 3
-        EditText editText = (EditText) findViewById(R.id.question3_TextField);
-        String answer = editText.getText().toString();
-        answer = answer.trim();
-        answer = answer.toLowerCase();
+        String answer = question3.getText().toString().trim().toLowerCase();
         String answer2 = getResources().getString(R.string.question3Answer);
         if (answer.equals(answer2)) {
             percentage += 20;
         }
-        editText.setText("");
+        question3.setText("");
 
         // Question number 4
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkbox1);
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkbox2);
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.checkbox3);
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.checkbox4);
-        if (!checkBox2.isChecked() && checkBox1.isChecked() && checkBox3.isChecked() && !checkBox4.isChecked()) {
+        if (!question4_B.isChecked() && question4_A.isChecked() && question4_C.isChecked() && !question4_D.isChecked()) {
             percentage += 20;
         }
+
         // Question number 5
-        RadioGroup question5 = (RadioGroup) findViewById(R.id.radio_group3);
         if (question5.getCheckedRadioButtonId() == R.id.question_5_right_answer) {
             percentage += 20;
         }
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,ResultActivity.class);
         intent = intent.putExtra(RESULT, countGoodAnswers());
         intent = intent.putExtra(NAME ,name);
+        percentage = 0;
         startActivity(intent);
     }
 
