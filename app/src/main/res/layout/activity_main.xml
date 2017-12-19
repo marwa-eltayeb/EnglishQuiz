@@ -13,7 +13,7 @@
 
         <!-- Name of the user. -->
         <EditText
-            android:id="@+id/name_field"
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name" />
@@ -25,7 +25,7 @@
 
         <!-- Answers for question one. -->
         <RadioGroup
-            android:id="@+id/radio_group1"
+            android:id="@+id/question1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -55,7 +55,7 @@
 
         <!-- Answers for question two. -->
         <RadioGroup
-            android:id="@+id/radio_group2"
+            android:id="@+id/question2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -85,7 +85,7 @@
 
         <!-- Answer for question three. -->
         <EditText
-            android:id="@+id/question3_TextField"
+            android:id="@+id/question3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/typeYourAnswer" />
@@ -97,22 +97,22 @@
 
         <!-- Answers for question four. -->
         <CheckBox
-            android:id="@+id/checkbox1"
+            android:id="@+id/question4_A"
             style="@style/answers"
             android:text="@string/q4_answer_a" />
 
         <CheckBox
-            android:id="@+id/checkbox2"
+            android:id="@+id/question4_B"
             style="@style/answers"
             android:text="@string/q4_answer_b" />
 
         <CheckBox
-            android:id="@+id/checkbox3"
+            android:id="@+id/question4_C"
             style="@style/answers"
             android:text="@string/q4_answer_c" />
 
         <CheckBox
-            android:id="@+id/checkbox4"
+            android:id="@+id/question4_D"
             style="@style/answers"
             android:text="@string/q4_answer_d" />
 
@@ -129,7 +129,7 @@
 
         <!-- Answers for question five. -->
         <RadioGroup
-            android:id="@+id/radio_group3"
+            android:id="@+id/question5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/marginTop"
