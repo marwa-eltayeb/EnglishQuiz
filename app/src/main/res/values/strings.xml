@@ -2,6 +2,8 @@
 
     <!-- Name of the app -->
     <string name="app_name">English Quiz</string>
+    <!-- Name of the app -->
+    <string name="activity_name">Result</string>
 
     <!-- Hint -->
     <string name="name">Type your name</string>
