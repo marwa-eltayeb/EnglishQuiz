@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Get references using findViewById() method
+        // Gets references using findViewById() method
         userName = (EditText) findViewById(R.id.userName);
         question1 = (RadioGroup) findViewById(R.id.question1);
         question2 = (RadioGroup) findViewById(R.id.question2);

@@ -8,11 +8,13 @@
     android:layout_weight="5"
     tools:context="com.example.marwa.englishquiz.ResultActivity">
 
+    <!-- Name of the user. -->
     <TextView
         android:id="@+id/name"
         style="@style/nameAndResult"
         tools:text="Name" />
 
+    <!-- An image describes the feelings towards the result. -->
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/widthOfImage"
@@ -22,6 +24,7 @@
         app:srcCompat="@drawable/happy"
         android:contentDescription="@string/feelingsTowardsResult" />
 
+    <!-- The result. -->
     <TextView
         android:id="@+id/result"
         style="@style/nameAndResult"

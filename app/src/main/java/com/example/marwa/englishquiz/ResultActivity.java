@@ -10,8 +10,19 @@ import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
 
+    /**
+     * Restores the username.
+     */
     TextView nameTextView;
+
+    /**
+     * Puts an image related to the result.
+     */
     ImageView resultImageView;
+
+    /**
+     * Restores the result.
+     */
     TextView resultTextView;
 
 
@@ -23,14 +34,16 @@ public class ResultActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.NAME);
-        int result = intent.getIntExtra(MainActivity.RESULT,0);
+        int result = intent.getIntExtra(MainActivity.RESULT, 0);
         String fullResult = result + getResources().getString(R.string.percentage);
 
+        // Gets references using findViewById() method
         nameTextView = (TextView) findViewById(R.id.name);
-        nameTextView.setText(name);
-
         resultTextView = (TextView) findViewById(R.id.result);
         resultImageView = (ImageView) findViewById(R.id.image);
+
+        // Restores the username
+        nameTextView.setText(name);
 
 
         // Feedback for the Result
@@ -38,19 +51,15 @@ public class ResultActivity extends AppCompatActivity {
             resultTextView.setText(fullResult);
             resultImageView.setImageResource(R.drawable.happy);
             Toast.makeText(this, "Well Done!", Toast.LENGTH_SHORT).show();
-
-
-        }else if (result > 0){
+        } else if (result > 0) {
             resultTextView.setText(fullResult);
             resultImageView.setImageResource(R.drawable.fair);
             Toast.makeText(this, "Fair", Toast.LENGTH_SHORT).show();
-        }else {
+        } else {
             resultTextView.setText(fullResult);
             resultImageView.setImageResource(R.drawable.sad);
             Toast.makeText(this, "Try Again", Toast.LENGTH_SHORT).show();
         }
-
-
 
 
     }
