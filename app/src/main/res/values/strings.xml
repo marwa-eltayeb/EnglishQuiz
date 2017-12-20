@@ -2,7 +2,7 @@
 
     <!-- Name of the app -->
     <string name="app_name">English Quiz</string>
-    <!-- Name of the app -->
+    <!-- Name of the Result Activity -->
     <string name="activity_name">Result</string>
 
     <!-- Hint -->
