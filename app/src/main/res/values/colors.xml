@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#0a6659</color>
     <color name="colorPrimaryDark">#073e36</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#0a6659</color>
 
     <!-- Color of circles. -->
     <color name="colorOfCircle">#0a6659</color>
@@ -16,5 +16,5 @@
 
     <!-- Color of name and result in activity_result. -->
     <color name="colorOfNameAndResult">#000</color>
-    
+
 </resources>
