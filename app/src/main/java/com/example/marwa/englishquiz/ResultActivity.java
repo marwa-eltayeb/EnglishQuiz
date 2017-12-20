@@ -31,7 +31,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-
+        // Restores the values of the name and result.
         Intent intent = getIntent();
         String name = intent.getStringExtra(MainActivity.NAME);
         int result = intent.getIntExtra(MainActivity.RESULT, 0);

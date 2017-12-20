@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
      * Opens Results activity and passes good answers' percentage
      */
     public void submitAnswers(View view) {
+        // Saves the values of the name and result.
         Intent intent = new Intent(MainActivity.this, ResultActivity.class);
         intent = intent.putExtra(RESULT, calculateCorrectAnswers());
         intent = intent.putExtra(NAME, name);
