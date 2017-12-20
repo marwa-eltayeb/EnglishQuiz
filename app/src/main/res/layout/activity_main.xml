@@ -37,12 +37,10 @@
 
 
             <RadioButton
-                android:id="@+id/question1_answer2"
                 style="@style/answers"
                 android:text="@string/q1_answer_b" />
 
             <RadioButton
-                android:id="@+id/question1_answer3"
                 style="@style/answers"
                 android:text="@string/q1_answer_c" />
 
@@ -61,13 +59,11 @@
             android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/question2_answer1"
                 style="@style/answers"
                 android:text="@string/q2_answer_a" />
 
 
             <RadioButton
-                android:id="@+id/question2_answer2"
                 style="@style/answers"
                 android:text="@string/q2_answer_b" />
 
@@ -142,12 +138,10 @@
 
 
             <RadioButton
-                android:id="@+id/question5_answer2"
                 style="@style/answers"
                 android:text="@string/q5_answer_b" />
 
             <RadioButton
-                android:id="@+id/question5_answer3"
                 style="@style/answers"
                 android:text="@string/q5_answer_c" />
 
@@ -155,7 +149,6 @@
 
         <!-- Submit your answers or rest them. -->
         <Button
-            android:id="@+id/button1"
             style="@style/buttons"
             android:onClick="submitAnswers"
             android:text="@string/submit" />
