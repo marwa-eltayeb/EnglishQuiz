@@ -3,9 +3,9 @@
     android:shape="rectangle">
     <stroke
         android:width="@dimen/widthOfStroke"
-        android:color="@color/colorOfStrokeOfButton" />
+        android:color="@color/colorOfStroke" />
 
-    <solid android:color="@color/backgroundColorOfButton" />
+    <solid android:color="@color/backgroundColor" />
 
     <corners android:radius="@dimen/radiusOfButton" />
 </shape>
