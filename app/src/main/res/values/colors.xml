@@ -16,6 +16,5 @@
 
     <!-- Color of name and result in activity_result. -->
     <color name="colorOfNameAndResult">#000</color>
-
-
+    
 </resources>
