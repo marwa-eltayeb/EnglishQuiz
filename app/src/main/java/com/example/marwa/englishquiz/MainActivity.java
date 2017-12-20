@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the Submit button is clicked.
+     * This method is called when the Submit bg_style is clicked.
      * Opens Results activity and passes good answers' percentage
      */
     public void submitAnswers(View view) {
