@@ -1,14 +1,14 @@
 package com.example.marwa.englishquiz;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class ResultActivity extends Activity {
+public class ResultActivity extends AppCompatActivity {
 
     TextView nameTextView;
     ImageView resultImageView;
