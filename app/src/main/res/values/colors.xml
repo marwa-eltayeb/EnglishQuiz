@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#002fff</color>
-    <color name="colorPrimaryDark">#002093</color>
+    <color name="colorPrimary">#0a6659</color>
+    <color name="colorPrimaryDark">#073e36</color>
     <color name="colorAccent">#FF4081</color>
 
     <!-- Color of circles. -->
-    <color name="colorOfCircle">#ff009d</color>
+    <color name="colorOfCircle">#0a6659</color>
 
     <!-- Color of the text. -->
     <color name="colorOfText">#fff</color>
 
-    <!-- TextViews. -->
-    <color name="backgroundColorOfTextView">#5179ff</color>
-    <color name="colorOfStrokeOfTextView">#60585d</color>
-
-    <!-- Buttons. -->
-    <color name="backgroundColorOfButton">#2d53ff</color>
-    <color name="colorOfStrokeOfButton">#d6014e</color>
+    <!-- Color of Background. -->
+    <color name="backgroundColor">#0a6659</color>
+    <color name="colorOfStroke">#60585d</color>
 
     <!-- Color of name and result in activity_result. -->
     <color name="colorOfNameAndResult">#000</color>
