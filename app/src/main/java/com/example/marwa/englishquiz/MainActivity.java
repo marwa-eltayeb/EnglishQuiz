@@ -2,6 +2,7 @@ package com.example.marwa.englishquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
      * stores the user name in the variable called name.
      */
     String name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +82,28 @@ public class MainActivity extends AppCompatActivity {
         question4_C = (CheckBox) findViewById(R.id.question4_C);
         question4_D = (CheckBox) findViewById(R.id.question4_D);
         question5 = (RadioGroup) findViewById(R.id.question5);
+
+
+        /*
+         * Gets the selections of the user.
+         */
+        if (savedInstanceState != null) {
+            int q1 = savedInstanceState.getInt(QUESTION1);
+            int q2 = savedInstanceState.getInt(QUESTION2);
+            boolean q4_A = savedInstanceState.getBoolean(QUESTION4_A);
+            boolean q4_B = savedInstanceState.getBoolean(QUESTION4_B);
+            boolean q4_C = savedInstanceState.getBoolean(QUESTION4_C);
+            boolean q4_D = savedInstanceState.getBoolean(QUESTION4_D);
+            int q5 = savedInstanceState.getInt(QUESTION5);
+            question1.check(q1);
+            question2.check(q2);
+            question4_A.setChecked(q4_A);
+            question4_B.setChecked(q4_B);
+            question4_C.setChecked(q4_C);
+            question4_D.setChecked(q4_D);
+            question5.check(q5);
+        }
+
     }
 
     /**
@@ -139,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called to unCheck the user name and questions
      * after all the answers are submitted.  .
      */
-    private  void unCheckAllResults(){
+    private void unCheckAllResults() {
         userName.setText("");
         question1.clearCheck();
         question2.clearCheck();
@@ -149,6 +173,21 @@ public class MainActivity extends AppCompatActivity {
         question4_C.setChecked(false);
         question4_D.setChecked(false);
         question5.clearCheck();
+    }
+
+    /**
+     * Saves the selections of the user.
+     */
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        outState.putInt(QUESTION1, question1.getCheckedRadioButtonId());
+        outState.putInt(QUESTION2, question2.getCheckedRadioButtonId());
+        outState.putBoolean(QUESTION4_A, question4_A.isChecked());
+        outState.putBoolean(QUESTION4_B, question4_B.isChecked());
+        outState.putBoolean(QUESTION4_C, question4_C.isChecked());
+        outState.putBoolean(QUESTION4_D, question4_D.isChecked());
+        outState.putInt(QUESTION5, question5.getCheckedRadioButtonId());
     }
 
 }
