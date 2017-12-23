@@ -15,6 +15,13 @@ public class MainActivity extends AppCompatActivity {
      */
     protected static final String NAME = "name";
     protected static final String RESULT = "result";
+    private final String QUESTION1 = "question1";
+    private final String QUESTION2 = "question2";
+    private final String QUESTION4_A = "question4_a";
+    private final String QUESTION4_B = "question4_b";
+    private final String QUESTION4_C = "question4_c";
+    private final String QUESTION4_D = "question4_d";
+    private final String QUESTION5 = "question5";
 
     /**
      * Tracks the percentage for each question.
