@@ -27,45 +27,45 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Tracks the percentage for each question.
      */
-    int percentage = 0;
+    private int percentage = 0;
 
     /**
      * Gets the user name.
      */
-    EditText userName;
+    private EditText userName;
 
     /**
      * Gets question one's result.
      */
-    RadioGroup question1;
+    private RadioGroup question1;
 
     /**
      * Gets question two's result.
      */
-    RadioGroup question2;
+    private RadioGroup question2;
 
     /**
      * Gets question three's result.
      */
-    EditText question3;
+    private EditText question3;
 
     /**
      * Gets question four's result.
      */
-    CheckBox question4_A;
-    CheckBox question4_B;
-    CheckBox question4_C;
-    CheckBox question4_D;
+    private CheckBox question4_A;
+    private CheckBox question4_B;
+    private CheckBox question4_C;
+    private CheckBox question4_D;
 
     /**
      * Gets question five's result.
      */
-    RadioGroup question5;
+    private RadioGroup question5;
 
     /**
      * stores the user name in the variable called name.
      */
-    String name;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
