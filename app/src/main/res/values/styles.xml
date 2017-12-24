@@ -27,7 +27,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:buttonTint" tools:targetApi="lollipop">@color/colorOfCircle</item>
     </style>
-    
+
     <!-- Style for Button. -->
     <style name="buttons">
         <item name="android:layout_width">wrap_content</item>
