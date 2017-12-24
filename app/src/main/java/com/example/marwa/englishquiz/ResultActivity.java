@@ -13,17 +13,17 @@ public class ResultActivity extends AppCompatActivity {
     /**
      * Restores the username.
      */
-    TextView nameTextView;
+    private TextView nameTextView;
 
     /**
      * Puts an image related to the result.
      */
-    ImageView resultImageView;
+    private ImageView resultImageView;
 
     /**
      * Restores the result.
      */
-    TextView resultTextView;
+    private TextView resultTextView;
 
 
     @Override
@@ -63,4 +63,10 @@ public class ResultActivity extends AppCompatActivity {
 
 
     }
+
+
+    
+
+
+
 }
