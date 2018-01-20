@@ -15,7 +15,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/marginForTextView</item>
         <item name="android:layout_marginBottom">@dimen/marginForTextView</item>
-        <item name="android:background">@xml/bg_style</item>
+        <item name="android:background">@drawable/bg_style</item>
         <item name="android:padding">@dimen/paddingForTextView</item>
         <item name="android:textColor">@color/colorOfText</item>
         <item name="android:textSize">@dimen/textSize</item>
@@ -33,7 +33,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/marginTopForButton</item>
-        <item name="android:background">@xml/bg_style</item>
+        <item name="android:background">@drawable/bg_style</item>
         <item name="android:padding">@dimen/paddingForButton</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textAllCaps">false</item>
