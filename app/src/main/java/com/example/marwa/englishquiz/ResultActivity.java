@@ -10,21 +10,6 @@ import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
 
-    /**
-     * Restores the username.
-     */
-    private TextView nameTextView;
-
-    /**
-     * Puts an image related to the result.
-     */
-    private ImageView resultImageView;
-
-    /**
-     * Restores the result.
-     */
-    private TextView resultTextView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +23,9 @@ public class ResultActivity extends AppCompatActivity {
         String fullResult = result + getResources().getString(R.string.percentage);
 
         // Gets references using findViewById() method
-        nameTextView = (TextView) findViewById(R.id.name);
-        resultTextView = (TextView) findViewById(R.id.result);
-        resultImageView = (ImageView) findViewById(R.id.image);
+        TextView nameTextView = (TextView) findViewById(R.id.name);
+        TextView resultTextView = (TextView) findViewById(R.id.result);
+        ImageView resultImageView = (ImageView) findViewById(R.id.image);
 
         // Restores the username
         nameTextView.setText(name);
