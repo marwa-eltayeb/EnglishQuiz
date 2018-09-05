@@ -4,9 +4,6 @@
 
 ## Project includes:
 
-- RadioGroup
-- EditText
-- CheckBox
 - onSaveInstanceState to save and restore the value of the users' selectins when they rotate
 - Explicit Intent the values of the name and result
 - Diffirent image sizes for all screens
