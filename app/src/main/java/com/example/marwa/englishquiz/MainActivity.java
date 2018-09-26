@@ -82,8 +82,7 @@ public class MainActivity extends AppCompatActivity {
         question4_C = (CheckBox) findViewById(R.id.question4_C);
         question4_D = (CheckBox) findViewById(R.id.question4_D);
         question5 = (RadioGroup) findViewById(R.id.question5);
-
-
+        
         /*
          * Gets the selections of the user.
          */
